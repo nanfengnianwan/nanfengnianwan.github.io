@@ -1,130 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Alist的安装与配置</title>
-    <url>/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><ol>
-<li><a class="link" href="https://alist.nn.ci/zh/">Alist<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>支持的网盘（我的是<a class="link" href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>）</li>
-<li>安装的1panel面板</li>
-<li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
-</ol>
-<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
-<li><p>访问1panel面板</p>
-</li>
-<li><p>进入<code>应用商店</code>界面</p>
-</li>
-<li><p>安装Alist</p>
-</li>
-<li><p>进入终端输入以下指令更改密码</p>
-<div class="code-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p>
-</li>
-<li><p>参考<a class="link" href="https://alist.nn.ci/zh/guide/">Alist的官方文档<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>进行配置存储</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
-      </categories>
-      <tags>
-        <tag>vps</tag>
-        <tag>docker</tag>
-        <tag>面板</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图床</title>
-    <url>/2025/01/14/%E5%9B%BE%E5%BA%8A/</url>
-    <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><blockquote>
-<ol>
-<li>已经搭建好的Alist网盘</li>
-<li><a class="link" href="https://github.com/Kuingsmile/PicList">PicList<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
-</ol>
-</blockquote>
-<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
-<li>参考PicList关于Alist的配置文档即可<br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0" alt="image-20250114003227914"></li>
-</ol>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
-      </categories>
-      <tags>
-        <tag>vps</tag>
-        <tag>docker</tag>
-        <tag>面板</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>new-api</title>
-    <url>/2025/01/12/new-api/</url>
-    <content><![CDATA[
-<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="c078cbe2eb70e3d4c321c6e8e7bc8d1c257df524de26b534949699fad62d51a4">9d8433c517f885cd69ad698c603e2584fa2165625773af84974045bc0d53dafc</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
-<script data-swup-reload-script type="module">
-import {initHBE} from "/js/plugins/hbe.js";
-  console.log("hexo-blog-encrypt: loaded.");
-    initHBE();
-</script>
-]]></content>
-  </entry>
-  <entry>
-    <title>openwebui</title>
-    <url>/2025/01/12/openwebui/</url>
-    <content><![CDATA[
-<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="c078cbe2eb70e3d4c321c6e8e7bc8d1c257df524de26b534949699fad62d51a4">9d8433c517f885cd69ad698c603e2584fa2165625773af84974045bc0d53dafc</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
-<script data-swup-reload-script type="module">
-import {initHBE} from "/js/plugins/hbe.js";
-  console.log("hexo-blog-encrypt: loaded.");
-    initHBE();
-</script>
-]]></content>
-  </entry>
-  <entry>
-    <title>节点</title>
-    <url>/2025/01/12/%E8%8A%82%E7%82%B9/</url>
-    <content><![CDATA[
-<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="c078cbe2eb70e3d4c321c6e8e7bc8d1c257df524de26b534949699fad62d51a4">9d8433c517f885cd69ad698c603e2584fa2165625773af84974045bc0d53dafc</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
-<script data-swup-reload-script type="module">
-import {initHBE} from "/js/plugins/hbe.js";
-  console.log("hexo-blog-encrypt: loaded.");
-    initHBE();
-</script>
-]]></content>
-  </entry>
-  <entry>
     <title>1panel安装与配置</title>
     <url>/2025/01/12/1panel%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><ol>
@@ -183,6 +59,28 @@ import {initHBE} from "/js/plugins/hbe.js";
       </tags>
   </entry>
   <entry>
+    <title>图床</title>
+    <url>/2025/01/14/%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><blockquote>
+<ol>
+<li>已经搭建好的Alist网盘</li>
+<li><a class="link" href="https://github.com/Kuingsmile/PicList">PicList<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+</ol>
+</blockquote>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
+<li>参考PicList关于Alist的配置文档即可<br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0" alt="image-20250114003227914"></li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>面板</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>域名绑定</title>
     <url>/2025/01/14/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/</url>
     <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><blockquote>
@@ -221,5 +119,107 @@ import {initHBE} from "/js/plugins/hbe.js";
         <tag>docker</tag>
         <tag>面板</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>new-api</title>
+    <url>/2025/01/12/new-api/</url>
+    <content><![CDATA[
+<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="c078cbe2eb70e3d4c321c6e8e7bc8d1c257df524de26b534949699fad62d51a4">9d8433c517f885cd69ad698c603e2584fa2165625773af84974045bc0d53dafc</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
+<script data-swup-reload-script type="module">
+import {initHBE} from "/js/plugins/hbe.js";
+  console.log("hexo-blog-encrypt: loaded.");
+    initHBE();
+</script>
+]]></content>
+  </entry>
+  <entry>
+    <title>openwebui</title>
+    <url>/2025/01/12/openwebui/</url>
+    <content><![CDATA[
+<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="c078cbe2eb70e3d4c321c6e8e7bc8d1c257df524de26b534949699fad62d51a4">9d8433c517f885cd69ad698c603e2584fa2165625773af84974045bc0d53dafc</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
+<script data-swup-reload-script type="module">
+import {initHBE} from "/js/plugins/hbe.js";
+  console.log("hexo-blog-encrypt: loaded.");
+    initHBE();
+</script>
+]]></content>
+  </entry>
+  <entry>
+    <title>Alist的安装与配置</title>
+    <url>/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><ol>
+<li><a class="link" href="https://alist.nn.ci/zh/">Alist<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>支持的网盘（我的是<a class="link" href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>）</li>
+<li>安装的1panel面板</li>
+<li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
+</ol>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
+<li><p>访问1panel面板</p>
+</li>
+<li><p>进入<code>应用商店</code>界面</p>
+</li>
+<li><p>安装Alist</p>
+</li>
+<li><p>进入终端输入以下指令更改密码</p>
+<div class="code-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p>
+</li>
+<li><p>参考<a class="link" href="https://alist.nn.ci/zh/guide/">Alist的官方文档<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>进行配置存储</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>面板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>节点</title>
+    <url>/2025/01/12/%E8%8A%82%E7%82%B9/</url>
+    <content><![CDATA[
+<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="c078cbe2eb70e3d4c321c6e8e7bc8d1c257df524de26b534949699fad62d51a4">9d8433c517f885cd69ad698c603e2584fa2165625773af84974045bc0d53dafc</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
+<script data-swup-reload-script type="module">
+import {initHBE} from "/js/plugins/hbe.js";
+  console.log("hexo-blog-encrypt: loaded.");
+    initHBE();
+</script>
+]]></content>
   </entry>
 </search>
