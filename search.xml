@@ -1,39 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试</title>
-    <url>/2025/01/12/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="9.176ex" height="1.692ex" role="img" focusable="false" viewBox="0 -666 4056 748"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(722.2,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mn" transform="translate(1722.4,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(2500.2,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(3556,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container></p>
-
-  <div class="note p-4 mb-4 rounded-small default">
-    <p>默认的note</p>
-
-  </div>
-
-
-  <div class="note p-4 mb-4 rounded-small danger">
-    <p>危险的note</p>
-
-  </div>
-
- 
-  <div class="note p-4 mb-4 rounded-small danger">
-    <p>danger 提示块标签</p>
-
-  </div>
-
- 
-  <div class="note p-4 mb-4 rounded-small danger">
-    <p>danger 提示块标签</p>
-
-  </div>
-
-<div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">First Tab</a></li><li class="tab"><a class="#first-unique-name-2">Second Tab</a></li><li class="tab"><a class="#first-unique-name-3">Third Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p>
-<p>This is Tab 2.</p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
-<p>This is Tab 3.</p>
-<p>This is Tab 3.</p></div></div></div>
-
-<p><img lazyload="" src="/images/loading.svg" data-src="http://pan.munian390.top/dav/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/image-20250112152305779.png" alt="123"></p>
+    <title>Alist的安装与配置</title>
+    <url>/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><ol>
+<li><a class="link" href="https://alist.nn.ci/zh/">Alist<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>支持的网盘（我的是<a class="link" href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>）</li>
+<li>安装的1panel面板</li>
+<li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
+</ol>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
+<li><p>访问1panel面板</p>
+</li>
+<li><p>进入<code>应用商店</code>界面</p>
+</li>
+<li><p>安装Alist</p>
+</li>
+<li><p>进入终端输入以下指令更改密码</p>
+<div class="code-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p>
+</li>
+<li><p>参考<a class="link" href="https://alist.nn.ci/zh/guide/">Alist的官方文档<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>进行配置存储</p>
+</li>
+</ol>
 ]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>面板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图床</title>
+    <url>/2025/01/14/%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><blockquote>
+<ol>
+<li>已经搭建好的Alist网盘</li>
+<li><a class="link" href="https://github.com/Kuingsmile/PicList">PicList<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+</ol>
+</blockquote>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
+<li>参考PicList关于Alist的配置文档即可<br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0" alt="image-20250114003227914"></li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>面板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>new-api</title>
+    <url>/2025/01/12/new-api/</url>
+    <content><![CDATA[
+<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="c078cbe2eb70e3d4c321c6e8e7bc8d1c257df524de26b534949699fad62d51a4">9d8433c517f885cd69ad698c603e2584fa2165625773af84974045bc0d53dafc</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
+<script data-swup-reload-script type="module">
+import {initHBE} from "/js/plugins/hbe.js";
+  console.log("hexo-blog-encrypt: loaded.");
+    initHBE();
+</script>
+]]></content>
+  </entry>
+  <entry>
+    <title>openwebui</title>
+    <url>/2025/01/12/openwebui/</url>
+    <content><![CDATA[
+<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="c078cbe2eb70e3d4c321c6e8e7bc8d1c257df524de26b534949699fad62d51a4">9d8433c517f885cd69ad698c603e2584fa2165625773af84974045bc0d53dafc</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
+<script data-swup-reload-script type="module">
+import {initHBE} from "/js/plugins/hbe.js";
+  console.log("hexo-blog-encrypt: loaded.");
+    initHBE();
+</script>
+]]></content>
+  </entry>
+  <entry>
+    <title>节点</title>
+    <url>/2025/01/12/%E8%8A%82%E7%82%B9/</url>
+    <content><![CDATA[
+<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="c078cbe2eb70e3d4c321c6e8e7bc8d1c257df524de26b534949699fad62d51a4">9d8433c517f885cd69ad698c603e2584fa2165625773af84974045bc0d53dafc</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
+<script data-swup-reload-script type="module">
+import {initHBE} from "/js/plugins/hbe.js";
+  console.log("hexo-blog-encrypt: loaded.");
+    initHBE();
+</script>
+]]></content>
+  </entry>
+  <entry>
+    <title>1panel安装与配置</title>
+    <url>/2025/01/12/1panel%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><ol>
+<li>一个域名（方便访问服务器，毕竟那么一串没有规律的数字实在不方便记忆）</li>
+<li>一个vps（必要的）</li>
+<li>一个<a class="link" href="https://dash.cloudflare.com/">cloudflare<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>的账号（方便域名解析)</li>
+<li>一个ssh工具（我用的是开源的<a class="link" href="https://github.com/kingToolbox/WindTerm">windterm<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>）</li>
+</ol>
+<h1 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h1><blockquote>
+<ol>
+<li>将域名解析到cloudflare</li>
+<li>添加DNS记录，你的服务器地址和所需要的域名</li>
+</ol>
+</blockquote>
+<h1 id="vps准备"><a href="#vps准备" class="headerlink" title="vps准备"></a>vps准备</h1><blockquote>
+<ol>
+<li><p>一台境外免备案的vps</p>
+<blockquote>
+<p>境外的原因是:</p>
+<ol>
+<li>之后的项目会用到代理</li>
+<li>方便，不用去验证身份信息什么的</li>
+</ol>
+</blockquote>
+</li>
+<li><p>将vps的系统安装为Debian</p>
+</li>
+</ol>
+</blockquote>
+<h1 id="用ssh工具链接vps"><a href="#用ssh工具链接vps" class="headerlink" title="用ssh工具链接vps"></a>用ssh工具链接vps</h1><blockquote>
+<ol>
+<li>按要求输入vps提供商给你的密钥信息</li>
+</ol>
+</blockquote>
+<h1 id="安装1panel"><a href="#安装1panel" class="headerlink" title="安装1panel"></a>安装1panel</h1><blockquote>
+<ol>
+<li><p>在终端输入以下指令</p>
+<div class="code-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">curl -sSL https://resource.fit2cloud.com/1panel/package/quick<span class="emphasis">_start.sh -o quick_</span>start.sh &amp;&amp; bash quick<span class="emphasis">_start.sh</span></span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>执行指令</p>
+</li>
+<li><p>按照提示操作即可</p>
+</li>
+<li><p>执行完成后记住面板信息，按照提供的信息进行访问登录即可</p>
+</li>
+</ol>
+</blockquote>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>面板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>域名绑定</title>
+    <url>/2025/01/14/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/</url>
+    <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><blockquote>
+<ol>
+<li>已经在cloudflare上托管的域名</li>
+<li>1panel面板</li>
+</ol>
+</blockquote>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><div class="tabs" id="tab-1"><ul class="nav-tabs"><li class="tab active"><a class="#1-1">在1panel面板的步骤</a></li><li class="tab"><a class="#1-2">在cloudflare的步骤</a></li></ul><div class="tab-content"><div class="tab-pane active" id="1-1"><ol>
+<li>找到应用商店的<code>OpenResty</code><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004259637.png?sign=DoS-JMlqzmELPfOTCD8eFW-6KK0CQFhzQtDfz4J-p3s=:0" alt="image-20250114004259568"></li>
+<li>执行安装</li>
+<li>进入<code>网站</code>这个界面并点击<code>创建网站</code></li>
+<li>点击<code>反向代理</code>,按照要求填写即可<br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004751774.png?sign=Zrbt-1fUtfhafNPtUmU7rJCZDSTkO8KccNwuc-6USzk=:0" alt="image-20250114004751713"></li>
+<li>点击<code>证书</code>，点击<code>上传证书</code>，按照在cloudflare申请的证书上传即可<br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004916286.png?sign=EZVoj6IXO09x7_WCzkRHiHoSce6RHB2ma5G6E1NTZqk=:0" alt="image-20250114004916189"><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005821111.png?sign=EzCVImC-n0090gjytiTVF7E0mGDAKuBMvdr8q4lRckc=:0" alt="image-20250114005821039"></li>
+<li>回到<code>网站</code>这个页面，点击<code>配置</code></li>
+<li>点击<code>HTTPS</code>，点击<code>启用HTTPS</code>，点击<code>保存</code><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114010152860.png?sign=din9fai0a6Gr10bQt-MKi13TsuZzoKTmRFNUJbej2nc=:0" alt="image-20250114010152759"><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114010238479.png?sign=aSsjYF_FGr5kRxU2Od-hnorukj2NlfWYr0UonaOmLN8=:0" alt="image-20250114010238363"></li>
+</ol></div><div class="tab-pane" id="1-2"><ol>
+<li>访问你的<a class="link" href="https://dash.cloudflare.com/">cloudflare<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>的界面</li>
+<li>看到你转入的域名了嘛，点进去<br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004509005.png?sign=15oFcE3kMA6nSX7ZdaAGlfrzSREXlkyOovO-quDIfxw=:0" alt="image-20250114004508870"></li>
+<li>找到左侧的<code>DNS</code>，添加DNS记录即可</li>
+<li>点击<code>SSL/TLS</code></li>
+<li>点击<code>源服务器</code></li>
+<li>点击<code>创建证书</code><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005217446.png?sign=1ubVQCZD1vZ03BqE2KdIPVF43nT6b2so04LrhS3vkoA=:0" alt="image-20250114005217382"></li>
+<li>选择你的<code>证书有效期</code>，一般是15年，点击<code>创建</code><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005240258.png?sign=nl3BEiWqy2EIBEaX_A60BwDYo4mqqekZ3UYN0kFSrt0=:0" alt="image-20250114005240165"></li>
+<li>选择密钥格式为<code>PEM</code><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005430848.png?sign=bQHzPfQ33x8kgwJKuORmge1Oi1MBT-m_j-sBHv92njs=:0" alt="image-20250114005430780"></li>
+<li>创建一个记事本记住<code>源证书</code>(也就是公钥)和<code>私钥</code></li>
+</ol></div></div></div>
+
+<p>接着就可以通过配置的域名进行访问了</p>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>面板</tag>
+      </tags>
   </entry>
 </search>
