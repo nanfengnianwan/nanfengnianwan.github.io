@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>图床</title>
+    <url>/2025/01/14/%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h1 id="前期准备">前期准备</h1>
+<blockquote>
+<ol type="1">
+<li>已经搭建好的Alist网盘</li>
+<li><a href="https://github.com/Kuingsmile/PicList">PicList</a></li>
+</ol>
+</blockquote>
+<h1 id="步骤">步骤</h1>
+<ol type="1">
+<li>参考PicList关于Alist的配置文档即可 <img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0" alt="image-20250114003227914"></li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>面板</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>域名绑定</title>
     <url>/2025/01/14/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/</url>
     <content><![CDATA[<h1 id="前期准备">前期准备</h1>
@@ -45,18 +69,22 @@
       </tags>
   </entry>
   <entry>
-    <title>图床</title>
-    <url>/2025/01/14/%E5%9B%BE%E5%BA%8A/</url>
+    <title>Alist的安装与配置</title>
+    <url>/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="前期准备">前期准备</h1>
-<blockquote>
 <ol type="1">
-<li>已经搭建好的Alist网盘</li>
-<li><a href="https://github.com/Kuingsmile/PicList">PicList</a></li>
+<li><a href="https://alist.nn.ci/zh/">Alist</a>支持的网盘（我的是<a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive</a>）</li>
+<li>安装的1panel面板</li>
+<li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
 </ol>
-</blockquote>
 <h1 id="步骤">步骤</h1>
 <ol type="1">
-<li>参考PicList关于Alist的配置文档即可 <img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0" alt="image-20250114003227914"></li>
+<li><p>访问1panel面板</p></li>
+<li><p>进入<code>应用商店</code>界面</p></li>
+<li><p>安装Alist</p></li>
+<li><p>进入终端输入以下指令更改密码 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></p></li>
+<li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p></li>
+<li><p>参考<a href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储</p></li>
 </ol>
 ]]></content>
       <categories>
@@ -114,34 +142,11 @@
 <li><p>执行完成后记住面板信息，按照提供的信息进行访问登录即可</p></li>
 </ol>
 </blockquote>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
-      </categories>
-      <tags>
-        <tag>vps</tag>
-        <tag>docker</tag>
-        <tag>面板</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Alist的安装与配置</title>
-    <url>/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="前期准备">前期准备</h1>
-<ol type="1">
-<li><a href="https://alist.nn.ci/zh/">Alist</a>支持的网盘（我的是<a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive</a>）</li>
-<li>安装的1panel面板</li>
-<li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
-</ol>
-<h1 id="步骤">步骤</h1>
-<ol type="1">
-<li><p>访问1panel面板</p></li>
-<li><p>进入<code>应用商店</code>界面</p></li>
-<li><p>安装Alist</p></li>
-<li><p>进入终端输入以下指令更改密码 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></p></li>
-<li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p></li>
-<li><p>参考<a href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储</p></li>
-</ol>
+<p>----以下为测试内容</p>
+<figure>
+<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004916286.png?sign=EZVoj6IXO09x7_WCzkRHiHoSce6RHB2ma5G6E1NTZqk=:0" alt="1">
+<figcaption aria-hidden="true">1</figcaption>
+</figure>
 ]]></content>
       <categories>
         <category>个人vps配置之路</category>
