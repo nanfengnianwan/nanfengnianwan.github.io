@@ -6,8 +6,8 @@
     <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><ol>
 <li>一个域名（方便访问服务器，毕竟那么一串没有规律的数字实在不方便记忆）</li>
 <li>一个vps（必要的）</li>
-<li>一个<a class="link" href="https://dash.cloudflare.com/">cloudflare<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>的账号（方便域名解析)</li>
-<li>一个ssh工具（我用的是开源的<a class="link" href="https://github.com/kingToolbox/WindTerm">windterm<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>）</li>
+<li>一个<a href="https://dash.cloudflare.com/">cloudflare</a>的账号（方便域名解析)</li>
+<li>一个ssh工具（我用的是开源的<a href="https://github.com/kingToolbox/WindTerm">windterm</a>）</li>
 </ol>
 <h1 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h1><blockquote>
 <ol>
@@ -38,7 +38,7 @@
 <h1 id="安装1panel"><a href="#安装1panel" class="headerlink" title="安装1panel"></a>安装1panel</h1><blockquote>
 <ol>
 <li><p>在终端输入以下指令</p>
-<div class="code-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">curl -sSL https://resource.fit2cloud.com/1panel/package/quick<span class="emphasis">_start.sh -o quick_</span>start.sh &amp;&amp; bash quick<span class="emphasis">_start.sh</span></span><br></pre></td></tr></table></figure></div>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">curl -sSL https://resource.fit2cloud.com/1panel/package/quick<span class="emphasis">_start.sh -o quick_</span>start.sh &amp;&amp; bash quick<span class="emphasis">_start.sh</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>执行指令</p>
 </li>
@@ -64,11 +64,11 @@
     <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><blockquote>
 <ol>
 <li>已经搭建好的Alist网盘</li>
-<li><a class="link" href="https://github.com/Kuingsmile/PicList">PicList<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></li>
+<li><a href="https://github.com/Kuingsmile/PicList">PicList</a></li>
 </ol>
 </blockquote>
 <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
-<li>参考PicList关于Alist的配置文档即可<br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0" alt="image-20250114003227914"></li>
+<li>参考PicList关于Alist的配置文档即可<br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0" alt="image-20250114003227914"></li>
 </ol>
 ]]></content>
       <categories>
@@ -84,7 +84,7 @@
     <title>Alist的安装与配置</title>
     <url>/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><ol>
-<li><a class="link" href="https://alist.nn.ci/zh/">Alist<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>支持的网盘（我的是<a class="link" href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>）</li>
+<li><a href="https://alist.nn.ci/zh/">Alist</a>支持的网盘（我的是<a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive</a>）</li>
 <li>安装的1panel面板</li>
 <li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
 </ol>
@@ -96,11 +96,11 @@
 <li><p>安装Alist</p>
 </li>
 <li><p>进入终端输入以下指令更改密码</p>
-<div class="code-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></div>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p>
 </li>
-<li><p>参考<a class="link" href="https://alist.nn.ci/zh/guide/">Alist的官方文档<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>进行配置存储</p>
+<li><p>参考<a href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储</p>
 </li>
 </ol>
 ]]></content>
@@ -122,23 +122,23 @@
 <li>1panel面板</li>
 </ol>
 </blockquote>
-<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><div class="tabs" id="tab-1"><ul class="nav-tabs"><li class="tab active"><a class="#1-1">在1panel面板的步骤</a></li><li class="tab"><a class="#1-2">在cloudflare的步骤</a></li></ul><div class="tab-content"><div class="tab-pane active" id="1-1"><ol>
-<li>找到应用商店的<code>OpenResty</code><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004259637.png?sign=DoS-JMlqzmELPfOTCD8eFW-6KK0CQFhzQtDfz4J-p3s=:0" alt="image-20250114004259568"></li>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><div class="tabs" id="1"><ul class="nav-tabs"><li class="tab active"><a href="#1-1">在1panel面板的步骤</a></li><li class="tab"><a href="#1-2">在cloudflare的步骤</a></li></ul><div class="tab-content"><div class="tab-pane active" id="1-1"><ol>
+<li>找到应用商店的<code>OpenResty</code><br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004259637.png?sign=DoS-JMlqzmELPfOTCD8eFW-6KK0CQFhzQtDfz4J-p3s=:0" alt="image-20250114004259568"></li>
 <li>执行安装</li>
 <li>进入<code>网站</code>这个界面并点击<code>创建网站</code></li>
-<li>点击<code>反向代理</code>,按照要求填写即可<br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004751774.png?sign=Zrbt-1fUtfhafNPtUmU7rJCZDSTkO8KccNwuc-6USzk=:0" alt="image-20250114004751713"></li>
-<li>点击<code>证书</code>，点击<code>上传证书</code>，按照在cloudflare申请的证书上传即可<br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004916286.png?sign=EZVoj6IXO09x7_WCzkRHiHoSce6RHB2ma5G6E1NTZqk=:0" alt="image-20250114004916189"><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005821111.png?sign=EzCVImC-n0090gjytiTVF7E0mGDAKuBMvdr8q4lRckc=:0" alt="image-20250114005821039"></li>
+<li>点击<code>反向代理</code>,按照要求填写即可<br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004751774.png?sign=Zrbt-1fUtfhafNPtUmU7rJCZDSTkO8KccNwuc-6USzk=:0" alt="image-20250114004751713"></li>
+<li>点击<code>证书</code>，点击<code>上传证书</code>，按照在cloudflare申请的证书上传即可<br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004916286.png?sign=EZVoj6IXO09x7_WCzkRHiHoSce6RHB2ma5G6E1NTZqk=:0" alt="image-20250114004916189"><br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005821111.png?sign=EzCVImC-n0090gjytiTVF7E0mGDAKuBMvdr8q4lRckc=:0" alt="image-20250114005821039"></li>
 <li>回到<code>网站</code>这个页面，点击<code>配置</code></li>
-<li>点击<code>HTTPS</code>，点击<code>启用HTTPS</code>，点击<code>保存</code><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114010152860.png?sign=din9fai0a6Gr10bQt-MKi13TsuZzoKTmRFNUJbej2nc=:0" alt="image-20250114010152759"><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114010238479.png?sign=aSsjYF_FGr5kRxU2Od-hnorukj2NlfWYr0UonaOmLN8=:0" alt="image-20250114010238363"></li>
+<li>点击<code>HTTPS</code>，点击<code>启用HTTPS</code>，点击<code>保存</code><br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114010152860.png?sign=din9fai0a6Gr10bQt-MKi13TsuZzoKTmRFNUJbej2nc=:0" alt="image-20250114010152759"><br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114010238479.png?sign=aSsjYF_FGr5kRxU2Od-hnorukj2NlfWYr0UonaOmLN8=:0" alt="image-20250114010238363"></li>
 </ol></div><div class="tab-pane" id="1-2"><ol>
-<li>访问你的<a class="link" href="https://dash.cloudflare.com/">cloudflare<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>的界面</li>
-<li>看到你转入的域名了嘛，点进去<br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004509005.png?sign=15oFcE3kMA6nSX7ZdaAGlfrzSREXlkyOovO-quDIfxw=:0" alt="image-20250114004508870"></li>
+<li>访问你的<a href="https://dash.cloudflare.com/">cloudflare</a>的界面</li>
+<li>看到你转入的域名了嘛，点进去<br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114004509005.png?sign=15oFcE3kMA6nSX7ZdaAGlfrzSREXlkyOovO-quDIfxw=:0" alt="image-20250114004508870"></li>
 <li>找到左侧的<code>DNS</code>，添加DNS记录即可</li>
 <li>点击<code>SSL/TLS</code></li>
 <li>点击<code>源服务器</code></li>
-<li>点击<code>创建证书</code><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005217446.png?sign=1ubVQCZD1vZ03BqE2KdIPVF43nT6b2so04LrhS3vkoA=:0" alt="image-20250114005217382"></li>
-<li>选择你的<code>证书有效期</code>，一般是15年，点击<code>创建</code><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005240258.png?sign=nl3BEiWqy2EIBEaX_A60BwDYo4mqqekZ3UYN0kFSrt0=:0" alt="image-20250114005240165"></li>
-<li>选择密钥格式为<code>PEM</code><br><img lazyload="" src="/images/loading.svg" data-src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005430848.png?sign=bQHzPfQ33x8kgwJKuORmge1Oi1MBT-m_j-sBHv92njs=:0" alt="image-20250114005430780"></li>
+<li>点击<code>创建证书</code><br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005217446.png?sign=1ubVQCZD1vZ03BqE2KdIPVF43nT6b2so04LrhS3vkoA=:0" alt="image-20250114005217382"></li>
+<li>选择你的<code>证书有效期</code>，一般是15年，点击<code>创建</code><br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005240258.png?sign=nl3BEiWqy2EIBEaX_A60BwDYo4mqqekZ3UYN0kFSrt0=:0" alt="image-20250114005240165"></li>
+<li>选择密钥格式为<code>PEM</code><br><img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114005430848.png?sign=bQHzPfQ33x8kgwJKuORmge1Oi1MBT-m_j-sBHv92njs=:0" alt="image-20250114005430780"></li>
 <li>创建一个记事本记住<code>源证书</code>(也就是公钥)和<code>私钥</code></li>
 </ol></div></div></div>
 
@@ -151,6 +151,22 @@
         <tag>vps</tag>
         <tag>docker</tag>
         <tag>面板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2025/01/14/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>1</category>
+        <category>2</category>
+        <category>3</category>
+        <category>4</category>
+      </categories>
+      <tags>
+        <tag>3</tag>
+        <tag>1</tag>
+        <tag>2</tag>
       </tags>
   </entry>
 </search>
