@@ -22,28 +22,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"flat"},"fold":{"enable":true,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="vps的第二个程序：Alist，提供网盘挂载服务以及图床服务供博客使用">
+    <meta name="description" content="vps的第三个程序：new-api，提供整合大语言模型api接口">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Alist的安装与配置">
-<meta property="og:url" content="http://example.com/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:title" content="new-api的安装与配置">
+<meta property="og:url" content="http://example.com/2025/01/16/new-api%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="vps的第二个程序：Alist，提供网盘挂载服务以及图床服务供博客使用">
+<meta property="og:description" content="vps的第三个程序：new-api，提供整合大语言模型api接口">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-01-13T16:03:20.000Z">
-<meta property="article:modified_time" content="2025-01-16T03:46:24.340Z">
+<meta property="og:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116123602023.png?sign=fmBVhtf9xeUuzJbLe3VGCl1iHMmEVKQ1W6sERv9u3AA=:0">
+<meta property="og:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116124313052.png?sign=Kx5oqb9LAlEjlCJst_vTIrneIMZdA7-2pUveyf_9u_M=:0">
+<meta property="og:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116130147974.png?sign=UXv-Lk7s9eD25AkXaFTUz1zrdJdUnXNYAImmuMMXx28=:0">
+<meta property="article:published_time" content="2025-01-16T02:41:52.000Z">
+<meta property="article:modified_time" content="2025-01-16T06:29:14.154Z">
 <meta property="article:author" content="三念">
 <meta property="article:tag" content="vps,docker,面板">
 <meta property="article:tag" content="开源">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116123602023.png?sign=fmBVhtf9xeUuzJbLe3VGCl1iHMmEVKQ1W6sERv9u3AA=:0">
 
 
-<link rel="canonical" href="http://example.com/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/">
+<link rel="canonical" href="http://example.com/2025/01/16/new-api%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/","path":"2025/01/14/Alist的安装和配置/","title":"Alist的安装与配置"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/01/16/new-api%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/","path":"2025/01/16/new-api的安装与配置/","title":"new-api的安装与配置"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Alist的安装与配置 | Hexo</title>
+<title>new-api的安装与配置 | Hexo</title>
   
 
 
@@ -56,7 +60,119 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-</head>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -143,7 +259,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80"><span class="nav-number">1.</span> <span class="nav-text">项目地址</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="nav-number">2.</span> <span class="nav-text">前期准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">3.</span> <span class="nav-text">步骤</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80"><span class="nav-number">1.</span> <span class="nav-text">项目地址</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="nav-number">2.</span> <span class="nav-text">前期准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">3.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85new-api"><span class="nav-number">3.1.</span> <span class="nav-text">安装new-api</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%A7%A3%E9%87%8A"><span class="nav-number">4.</span> <span class="nav-text">代码解释</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEnew-api"><span class="nav-number">4.1.</span> <span class="nav-text">配置new-api</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%AE%BF%E9%97%AEnew-api"><span class="nav-number">4.1.1.</span> <span class="nav-text">以管理员身份访问new-api</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E6%B8%A0%E9%81%93"><span class="nav-number">4.1.2.</span> <span class="nav-text">添加渠道</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%99%BD%E5%AB%96%E8%B0%B7%E6%AD%8C%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.1.2.1.</span> <span class="nav-text">白嫖谷歌模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9E%E5%88%B0%E4%BD%A0%E7%9A%84new-api%E7%AE%A1%E7%90%86%E7%AA%97%E5%8F%A3"><span class="nav-number">4.1.2.2.</span> <span class="nav-text">回到你的new-api管理窗口</span></a></li></ol></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -216,7 +332,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/16/new-api%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250112193229582.jpg?sign=MaYEK6QFSxKE6SkhC2jLUk7WhZ4Cafm6yCRa5RZBIhI=:0">
@@ -229,12 +345,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Alist的安装与配置 | Hexo">
+      <meta itemprop="name" content="new-api的安装与配置 | Hexo">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Alist的安装与配置
+          new-api的安装与配置
         </h1>
 
         <div class="post-meta-container">
@@ -244,15 +360,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2025-01-14 00:03:20" itemprop="dateCreated datePublished" datetime="2025-01-14T00:03:20+08:00">2025-01-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-01-16 11:46:24" itemprop="dateModified" datetime="2025-01-16T11:46:24+08:00">2025-01-16</time>
+      <time title="创建时间：2025-01-16 10:41:52 / 修改时间：14:29:14" itemprop="dateCreated datePublished" datetime="2025-01-16T10:41:52+08:00">2025-01-16</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -280,26 +390,58 @@
     <div class="post-body" itemprop="articleBody"><h1 id="项目地址">项目地址</h1>
 <blockquote>
 <div class="note info"><blockquote>
-<p><a target="_blank" rel="noopener" href="https://alist.nn.ci/zh/">Alist官网地址</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/linux-do/new-api">new-api项目地址</a></p>
 </blockquote>
 </div>
 </blockquote>
 <h1 id="前期准备">前期准备</h1>
 <ol type="1">
-<li><a target="_blank" rel="noopener" href="https://alist.nn.ci/zh/">Alist</a>支持的网盘（我的是<a
-target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive</a>）</li>
-<li>安装的1panel面板</li>
-<li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
+<li>一台vps</li>
+<li>安装好1panel面板</li>
+<li>一些大语言模型的api
+<ol type="1">
+<li><a target="_blank" rel="noopener" href="https://aistudio.google.com/">谷歌aistudio</a>（我以这个为例，因为免费）</li>
+<li>其他</li>
+</ol></li>
 </ol>
 <h1 id="步骤">步骤</h1>
+<h2 id="安装new-api">安装new-api</h2>
 <ol type="1">
-<li><p>访问1panel面板</p></li>
-<li><p>进入<code>应用商店</code>界面</p></li>
-<li><p>安装Alist</p></li>
-<li><p>进入终端输入以下指令更改密码 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></p></li>
-<li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p></li>
-<li><p>参考<a
-target="_blank" rel="noopener" href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储</p></li>
+<li><p>创建一个文件夹挂载new-api数据</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p /opt/1panel/apps/new-api/data</span><br></pre></td></tr></table></figure></li>
+<li><p>执行代码进行安装</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name new-api -d --restart always -p 4000:3000 -e TZ=Asia/Shanghai -v /opt/1panel/apps/new-api/data:/data calciumion/new-api:latest</span><br></pre></td></tr></table></figure>
+<div class="note info"><h1 id="代码解释">代码解释</h1>
+<ol type="1">
+<li><code>4000:3000</code>：这个是将new-api这个docker的容器端口3000映射到服务器的4000端口</li>
+<li><code>/opt/1panel/apps/new-api/data:/data</code>：这一段是将容器的数据存储在<code>/opt/1panel/apps/new-api/data</code>这个位置</li>
+</ol>
+</div>
+<h2 id="配置new-api">配置new-api</h2>
+<h3 id="以管理员身份访问new-api">以管理员身份访问new-api</h3>
+<p>默认登录用户名<code>root</code>和默认密码<code>123456</code></p>
+<ol type="1">
+<li><p>记得修改密码之类的操作 <img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116123602023.png?sign=fmBVhtf9xeUuzJbLe3VGCl1iHMmEVKQ1W6sERv9u3AA=:0" alt="image-20250116123601846"></p></li>
+<li><p>由于本程序在我这里只是个人使用，所以需要将<code>设置</code>的<code>系统设置</code>按图修改。如果有商用需求请自行研究。
+<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116124313052.png?sign=Kx5oqb9LAlEjlCJst_vTIrneIMZdA7-2pUveyf_9u_M=:0" alt="image-20250116124312957"></p></li>
+</ol></li>
+</ol>
+<h3 id="添加渠道">添加渠道</h3>
+<h4 id="白嫖谷歌模型"><del>白嫖</del>谷歌模型</h4>
+<ol type="1">
+<li>访问<a target="_blank" rel="noopener" href="https://aistudio.google.com/apikey">谷歌的aistudio官网</a>并登录谷歌账号进行申请</li>
+<li>点击创建<code>API密钥</code>记录所获得的值</li>
+</ol>
+<h4 id="回到你的new-api管理窗口">回到你的new-api管理窗口</h4>
+<ol type="1">
+<li><p>找到左侧的的<code>渠道</code>点击<code>添加渠道</code></p></li>
+<li><p><code>类型</code>选择<code>Google Gemini</code>，名称自己填写，在<code>密钥</code>处填写刚刚获得的<code>API的值</code></p>
+<figure>
+<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116130147974.png?sign=UXv-Lk7s9eD25AkXaFTUz1zrdJdUnXNYAImmuMMXx28=:0" alt="image-20250116130147912">
+<figcaption aria-hidden="true">image-20250116130147912</figcaption>
+</figure>
+<p>模型还可以填写如下</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">gemini-1.5-pro</span><br><span class="line">gemini-1.5-flash</span><br><span class="line">gemini-1.5-flash-8b</span><br><span class="line">gemini-2.0-flash-exp</span><br><span class="line">gemini-exp-1206</span><br><span class="line">gemini-2.0-flash-thinking-exp-1219</span><br><span class="line">learnlm-1.5-pro-experimental</span><br><span class="line">gemma-2-2b-it</span><br><span class="line">gemma-2-9b-it</span><br><span class="line">gemma-2-27b-it</span><br></pre></td></tr></table></figure></li>
 </ol>
 
     </div>
@@ -318,14 +460,11 @@ target="_blank" rel="noopener" href="https://alist.nn.ci/zh/guide/">Alist的官�
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/01/12/1panel%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" rel="prev" title="1panel安装与配置">
-                  <i class="fa fa-angle-left"></i> 1panel安装与配置
+                <a href="/2025/01/15/%E8%AF%AD%E6%B3%95/" rel="prev" title="语法">
+                  <i class="fa fa-angle-left"></i> 语法
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2025/01/14/%E5%9B%BE%E5%BA%8A/" rel="next" title="图床">
-                  图床 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -398,12 +537,12 @@ target="_blank" rel="noopener" href="https://alist.nn.ci/zh/guide/">Alist的官�
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"http://example.com/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"http://example.com/2025/01/16/new-api%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 
 </body>
