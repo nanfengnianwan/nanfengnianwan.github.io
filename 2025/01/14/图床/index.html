@@ -29,15 +29,15 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="vps程序拓展1：基于搭建好的Alist程序进行创建图床">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0">
+<meta property="og:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118122623019.png?sign=T1OeILFYSYJsvacua70Cu-VZsEtLb6-0rMP497-nOcw=:0">
 <meta property="article:published_time" content="2025-01-13T16:23:20.000Z">
-<meta property="article:modified_time" content="2025-01-13T16:33:46.167Z">
+<meta property="article:modified_time" content="2025-01-18T04:30:58.333Z">
 <meta property="article:author" content="三念">
 <meta property="article:tag" content="vps">
-<meta property="article:tag" content="docker">
-<meta property="article:tag" content="面板">
+<meta property="article:tag" content="图床">
+<meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0">
+<meta name="twitter:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118122623019.png?sign=T1OeILFYSYJsvacua70Cu-VZsEtLb6-0rMP497-nOcw=:0">
 
 
 <link rel="canonical" href="http://example.com/2025/01/14/%E5%9B%BE%E5%BA%8A/">
@@ -284,7 +284,7 @@ mjx-container[display="true"] + br {
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -359,9 +359,15 @@ mjx-container[display="true"] + br {
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2025-01-14 00:23:20 / 修改时间：00:33:46" itemprop="dateCreated datePublished" datetime="2025-01-14T00:23:20+08:00">2025-01-14</time>
+      <time title="创建时间：2025-01-14 00:23:20" itemprop="dateCreated datePublished" datetime="2025-01-14T00:23:20+08:00">2025-01-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-01-18 12:30:58" itemprop="dateModified" datetime="2025-01-18T12:30:58+08:00">2025-01-18</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -370,6 +376,10 @@ mjx-container[display="true"] + br {
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E4%B8%AA%E4%BA%BAvps%E9%85%8D%E7%BD%AE%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">个人vps配置之路</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">hexo博客搭建</span></a>
         </span>
     </span>
 
@@ -385,13 +395,19 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody"><h1 id="前期准备">前期准备</h1>
 <blockquote>
 <ol type="1">
-<li>已经搭建好的Alist网盘</li>
+<li>已经搭建好的Alist网盘 还未搭建参考：<a href="/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" title="Alist的安装与配置">Alist的安装与配置</a></li>
 <li><a target="_blank" rel="noopener" href="https://github.com/Kuingsmile/PicList">PicList</a></li>
 </ol>
 </blockquote>
 <h1 id="步骤">步骤</h1>
 <ol type="1">
-<li>参考PicList关于Alist的配置文档即可 <img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0" alt="image-20250114003227914"></li>
+<li>参考PicList关于Alist的配置文档即可 <img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118122623019.png?sign=T1OeILFYSYJsvacua70Cu-VZsEtLb6-0rMP497-nOcw=:0" alt="image-20250118122622893">
+<ol type="1">
+<li><code>图床配置名</code>随便填写</li>
+<li><code>设定URL</code>就是你的AList网盘地址</li>
+<li><code>设定用户名</code>和<code>设定密码</code>就是你登陆Alist网盘的登录信息</li>
+<li><code>设定上传路径</code>就是你希望你的图床挂载在哪里</li>
+</ol></li>
 </ol>
 
     </div>
@@ -403,15 +419,15 @@ mjx-container[display="true"] + br {
     <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/vps/" rel="tag"><i class="fa fa-tag"></i> vps</a>
-              <a href="/tags/docker/" rel="tag"><i class="fa fa-tag"></i> docker</a>
-              <a href="/tags/%E9%9D%A2%E6%9D%BF/" rel="tag"><i class="fa fa-tag"></i> 面板</a>
+              <a href="/tags/%E5%9B%BE%E5%BA%8A/" rel="tag"><i class="fa fa-tag"></i> 图床</a>
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"><i class="fa fa-tag"></i> 博客</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/" rel="prev" title="Alist的安装与配置">
+                <a href="/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" rel="prev" title="Alist的安装与配置">
                   <i class="fa fa-angle-left"></i> Alist的安装与配置
                 </a>
             </div>

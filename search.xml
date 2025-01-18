@@ -58,154 +58,11 @@ href="https://github.com/kingToolbox/WindTerm">windterm</a>）</li>
 ]]></content>
       <categories>
         <category>个人vps配置之路</category>
-        <category>github开源项目</category>
-      </categories>
-      <tags>
-        <tag>vps,docker,面板</tag>
-        <tag>开源</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Alist的安装与配置</title>
-    <url>/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="项目地址">项目地址</h1>
-<blockquote>
-<div class="note info"><blockquote>
-<p><a href="https://alist.nn.ci/zh/">Alist官网地址</a></p>
-</blockquote>
-</div>
-</blockquote>
-<h1 id="前期准备">前期准备</h1>
-<ol type="1">
-<li><a href="https://alist.nn.ci/zh/">Alist</a>支持的网盘（我的是<a
-href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive</a>）</li>
-<li>安装的1panel面板</li>
-<li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
-</ol>
-<h1 id="步骤">步骤</h1>
-<ol type="1">
-<li><p>访问1panel面板</p></li>
-<li><p>进入<code>应用商店</code>界面</p></li>
-<li><p>安装Alist</p></li>
-<li><p>进入终端输入以下指令更改密码 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></p></li>
-<li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p></li>
-<li><p>参考<a
-href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储</p></li>
-</ol>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
-        <category>github开源项目</category>
-      </categories>
-      <tags>
-        <tag>vps,docker,面板</tag>
-        <tag>开源</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图床</title>
-    <url>/2025/01/14/%E5%9B%BE%E5%BA%8A/</url>
-    <content><![CDATA[<h1 id="前期准备">前期准备</h1>
-<blockquote>
-<ol type="1">
-<li>已经搭建好的Alist网盘</li>
-<li><a href="https://github.com/Kuingsmile/PicList">PicList</a></li>
-</ol>
-</blockquote>
-<h1 id="步骤">步骤</h1>
-<ol type="1">
-<li>参考PicList关于Alist的配置文档即可 <img src="http://107.175.213.203:3939/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%9B%BE%E5%BA%8A/20250114003227995.png?sign=HQYuu_FwzT5mma_cGJZugfNh_dYoWV7wUgJkn87sBas=:0" alt="image-20250114003227914"></li>
-</ol>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
       </categories>
       <tags>
         <tag>vps</tag>
         <tag>docker</tag>
         <tag>面板</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>new-api的安装与配置</title>
-    <url>/2025/01/16/new-api%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="项目地址">项目地址</h1>
-<blockquote>
-<div class="note info"><blockquote>
-<p><a href="https://github.com/linux-do/new-api">new-api项目地址</a></p>
-</blockquote>
-</div>
-</blockquote>
-<h1 id="前期准备">前期准备</h1>
-<ol type="1">
-<li>一台vps</li>
-<li>安装好1panel面板</li>
-<li>一些大语言模型的api
-<ol type="1">
-<li><a href="https://aistudio.google.com/">谷歌aistudio</a>（我以这个为例，因为免费）</li>
-<li>其他</li>
-</ol></li>
-</ol>
-<h1 id="步骤">步骤</h1>
-<h2 id="安装new-api">安装new-api</h2>
-<ol type="1">
-<li><p>创建一个文件夹挂载new-api数据</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">sudo mkdir -p /opt/1panel/apps/new-api/data</span><br></pre></td></tr></table></figure></li>
-<li><p>执行代码进行安装</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">docker run --name new-api -d --restart always -p 4000:3000 -e TZ=Asia/Shanghai -v /opt/1panel/apps/new-api/data:/data calciumion/new-api:latest</span><br></pre></td></tr></table></figure>
-<div class="note info"><h1 id="代码解释">代码解释</h1>
-<ol type="1">
-<li><code>4000:3000</code>：这个是将new-api这个docker的容器端口3000映射到服务器的4000端口</li>
-<li><code>/opt/1panel/apps/new-api/data:/data</code>：这一段是将容器的数据存储在<code>/opt/1panel/apps/new-api/data</code>这个位置</li>
-</ol>
-</div></li>
-</ol>
-<h2 id="配置new-api">配置new-api</h2>
-<p>### 以管理员身份访问new-api</p>
-<p>默认登录用户名<code>root</code>和默认密码<code>123456</code></p>
-<ol type="1">
-<li><p>记得修改密码之类的操作 <img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116123602023.png?sign=fmBVhtf9xeUuzJbLe3VGCl1iHMmEVKQ1W6sERv9u3AA=:0" alt="image-20250116123601846"></p></li>
-<li><p>由于本程序在我这里只是个人使用，所以需要将<code>设置</code>的<code>系统设置</code>按图修改。如果有商用需求请自行研究。
-<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116124313052.png?sign=Kx5oqb9LAlEjlCJst_vTIrneIMZdA7-2pUveyf_9u_M=:0"></p></li>
-</ol>
-<h3 id="添加渠道">添加渠道</h3>
-<h4 id="白嫖谷歌模型"><del>白嫖</del>谷歌模型</h4>
-<ol type="1">
-<li>访问<a href="https://aistudio.google.com/apikey">谷歌的aistudio官网</a>并登录谷歌账号进行申请</li>
-<li>点击创建<code>API密钥</code>记录所获得的值</li>
-</ol>
-<h4 id="回到你的new-api管理窗口">回到你的new-api管理窗口</h4>
-<ol type="1">
-<li><p>找到左侧的的<code>渠道</code>点击<code>添加渠道</code></p></li>
-<li><p><code>类型</code>选择<code>Google Gemini</code>，名称自己填写，在<code>密钥</code>处填写刚刚获得的<code>API的值</code></p>
-<p><img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116130147974.png?sign=UXv-Lk7s9eD25AkXaFTUz1zrdJdUnXNYAImmuMMXx28=:0"></p>
-<p>模型还可以填写如下</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">gemini-1.5-pro</span><br><span class="line">gemini-1.5-flash</span><br><span class="line">gemini-1.5-flash-8b</span><br><span class="line">gemini-2.0-flash-exp</span><br><span class="line">gemini-exp-1206</span><br><span class="line">gemini-2.0-flash-thinking-exp-1219</span><br><span class="line">learnlm-1.5-pro-experimental</span><br><span class="line">gemma-2-2b-it</span><br><span class="line">gemma-2-9b-it</span><br><span class="line">gemma-2-27b-it</span><br></pre></td></tr></table></figure></li>
-<li><p>点击刚刚添加的渠道旁边的<code>测试</code>，如果出现<code>测试成功</code>以及消耗的时间的字样就配置成功了
-<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118113843955.png?sign=KsvJbpftnJRfQ2imqkHhNSw20EoxUeS06ATSHZXPgfY=:0" alt="image-20250118113824198"></p>
-<div class="note warning"><p>如果提示什么<code>in your area not supported</code>等字样可能就是你的vps不支持gemini的解锁需要你重新配置vps解锁，不过境外的一般都是解锁的</p>
-</div></li>
-<li><p>然后你可以依次添加其他模型，包括第三方的 <div class="note info"><p>如果添加第三方的请注意在代理的那一个位置填写代理的url</p>
-</div></p></li>
-<li><p>创建<code>个人令牌</code>供自己使用 <div class="note info"><p>如果只有这么个令牌的话，用到后期可能会出现错误（就是余额不足的情况，但是渠道的余额是足够的）
-这是由于该程序设计出的初衷是为了商用的，默认一个 用户的额度是<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.127ex;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="1.824ex" role="img" focusable="false" viewBox="0 -750 2000 806"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="24" d="M162 187Q162 164 146 149T109 133H103V130Q108 115 115 105Q122 92 131 82T150 64T170 52T190 44T206 40T220 37L227 36V313Q190 320 162 335Q116 358 86 404T55 508Q55 567 85 614T165 685Q186 696 225 704H227V750H273V704L286 703Q369 690 413 631Q441 588 444 531Q444 514 443 509Q439 490 425 479T391 468Q368 468 353 483T337 522Q337 546 353 560T390 575L394 576V578Q386 599 372 614T342 637T314 649T288 656L273 658V408L288 405Q329 394 355 376Q396 348 420 300T444 199Q444 130 408 76T313 1Q286 -9 276 -9H273V-56H227V-10H221Q202 -6 193 -4T155 11T108 41T74 94T55 176V182Q55 227 95 238Q103 240 108 240Q129 240 145 226T162 187ZM225 657Q219 657 204 651T169 632T135 594T121 538Q121 512 131 491T156 457T187 435T213 423T227 420V539Q227 657 225 657ZM378 169Q378 230 339 265T274 301Q273 301 273 169V37Q324 50 351 87T378 169Z"></path></g><g data-mml-node="mn" transform="translate(500,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g></g></g></svg></mjx-container></span> 我们可以设置一下
-可以在<code>用户管理</code>的用户那个位置点击<code>编辑</code>，然后将额度调为自己的预算即可
-<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118115132332.png?sign=_em2sSJVmcyihw77WiPS18obBiJy1nQheL_Ou1ze1A4=:0" alt="image-20250118115132207"> 之后若是还不够，可以再次添加</p>
-</div></p></li>
-</ol>
-<h2 id="域名解析">域名解析</h2>
-<p>按照这个操作即可</p>
-<blockquote>
-<p><a href="/2025/01/14/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/" title="域名绑定">域名绑定</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
-        <category>github开源项目</category>
-      </categories>
-      <tags>
-        <tag>vps,docker,面板</tag>
-        <tag>开源</tag>
       </tags>
   </entry>
   <entry>
@@ -223,47 +80,6 @@ href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储<
       <tags>
         <tag>数学</tag>
         <tag>函数极限</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>域名绑定</title>
-    <url>/2025/01/14/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/</url>
-    <content><![CDATA[<h1 id="前期准备">前期准备</h1>
-<blockquote>
-<ol type="1">
-<li>已经在cloudflare上托管的域名</li>
-<li>1panel面板</li>
-</ol>
-</blockquote>
-<h1 id="步骤">步骤</h1>
-<div class="tabs" id="1"><ul class="nav-tabs"><li class="tab active"><a href="#1-1">在1panel面板的步骤</a></li><li class="tab"><a href="#1-2">在cloudflare的步骤</a></li></ul><div class="tab-content"><div class="tab-pane active" id="1-1"><ol type="1">
-<li>找到应用商店的<code>OpenResty</code></li>
-<li>执行安装</li>
-<li>进入<code>网站</code>这个界面并点击<code>创建网站</code></li>
-<li>点击<code>反向代理</code>,按照要求填写即可</li>
-<li>点击<code>证书</code>，点击<code>上传证书</code>，按照在cloudflare申请的证书上传即可</li>
-<li>回到<code>网站</code>这个页面，点击<code>配置</code></li>
-<li>点击<code>HTTPS</code>，点击<code>启用HTTPS</code>，点击<code>保存</code></li>
-</ol></div><div class="tab-pane" id="1-2"><ol type="1">
-<li>访问你的<a href="https://dash.cloudflare.com/">cloudflare</a>的界面</li>
-<li>看到你转入的域名了嘛，点进去</li>
-<li>找到左侧的<code>DNS</code>，添加DNS记录即可</li>
-<li>点击<code>SSL/TLS</code></li>
-<li>点击<code>源服务器</code></li>
-<li>点击<code>创建证书</code></li>
-<li>选择你的<code>证书有效期</code>，一般是15年，点击<code>创建</code></li>
-<li>选择密钥格式为<code>PEM</code></li>
-<li>创建一个记事本记住<code>源证书</code>(也就是公钥)和<code>私钥</code></li>
-</ol></div></div></div>
-<p>接着就可以通过配置的域名进行访问了</p>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
-      </categories>
-      <tags>
-        <tag>vps</tag>
-        <tag>docker</tag>
-        <tag>面板</tag>
       </tags>
   </entry>
   <entry>
@@ -313,6 +129,198 @@ href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储<
       </tags>
   </entry>
   <entry>
+    <title>域名绑定</title>
+    <url>/2025/01/14/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/</url>
+    <content><![CDATA[<h1 id="前期准备">前期准备</h1>
+<blockquote>
+<ol type="1">
+<li>已经在cloudflare上托管的域名</li>
+<li>1panel面板</li>
+</ol>
+</blockquote>
+<h1 id="步骤">步骤</h1>
+<div class="tabs" id="1"><ul class="nav-tabs"><li class="tab active"><a href="#1-1">在1panel面板的步骤</a></li><li class="tab"><a href="#1-2">在cloudflare的步骤</a></li></ul><div class="tab-content"><div class="tab-pane active" id="1-1"><ol type="1">
+<li>找到应用商店的<code>OpenResty</code></li>
+<li>执行安装</li>
+<li>进入<code>网站</code>这个界面并点击<code>创建网站</code></li>
+<li>点击<code>反向代理</code>,按照要求填写即可</li>
+<li>点击<code>证书</code>，点击<code>上传证书</code>，按照在cloudflare申请的证书上传即可</li>
+<li>回到<code>网站</code>这个页面，点击<code>配置</code></li>
+<li>点击<code>HTTPS</code>，点击<code>启用HTTPS</code>，点击<code>保存</code></li>
+</ol></div><div class="tab-pane" id="1-2"><ol type="1">
+<li>访问你的<a href="https://dash.cloudflare.com/">cloudflare</a>的界面</li>
+<li>看到你转入的域名了嘛，点进去</li>
+<li>找到左侧的<code>DNS</code>，添加DNS记录即可</li>
+<li>点击<code>SSL/TLS</code></li>
+<li>点击<code>源服务器</code></li>
+<li>点击<code>创建证书</code></li>
+<li>选择你的<code>证书有效期</code>，一般是15年，点击<code>创建</code></li>
+<li>选择密钥格式为<code>PEM</code></li>
+<li>创建一个记事本记住<code>源证书</code>(也就是公钥)和<code>私钥</code></li>
+</ol></div></div></div>
+<p>接着就可以通过配置的域名进行访问了</p>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>建站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>new-api的安装与配置</title>
+    <url>/2025/01/16/new-api%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="项目地址">项目地址</h1>
+<blockquote>
+<div class="note info"><blockquote>
+<p><a href="https://github.com/linux-do/new-api">new-api项目地址</a></p>
+</blockquote>
+</div>
+</blockquote>
+<h1 id="前期准备">前期准备</h1>
+<ol type="1">
+<li>一台vps</li>
+<li>安装好1panel面板</li>
+<li>一些大语言模型的api
+<ol type="1">
+<li><a href="https://aistudio.google.com/">谷歌aistudio</a>（我以这个为例，因为免费）</li>
+<li>其他</li>
+</ol></li>
+</ol>
+<h1 id="步骤">步骤</h1>
+<h2 id="安装new-api">安装new-api</h2>
+<ol type="1">
+<li><p>创建一个文件夹挂载new-api数据</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">sudo mkdir -p /opt/1panel/apps/new-api/data</span><br></pre></td></tr></table></figure></li>
+<li><p>执行代码进行安装</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">docker run --name new-api -d --restart always -p 4000:3000 -e TZ=Asia/Shanghai -v /opt/1panel/apps/new-api/data:/data calciumion/new-api:latest</span><br></pre></td></tr></table></figure>
+<div class="note info"><p><strong>代码解释</strong></p>
+<ol type="1">
+<li><code>4000:3000</code>：这个是将new-api这个docker的容器端口3000映射到服务器的4000端口</li>
+<li><code>/opt/1panel/apps/new-api/data:/data</code>：这一段是将容器的数据存储在<code>/opt/1panel/apps/new-api/data</code>这个位置</li>
+</ol>
+</div></li>
+</ol>
+<h2 id="配置new-api">配置new-api</h2>
+<h3 id="以管理员身份访问new-api">以管理员身份访问new-api</h3>
+<p>默认登录用户名<code>root</code>和默认密码<code>123456</code></p>
+<ol type="1">
+<li><p>记得修改密码之类的操作 <img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116123602023.png?sign=fmBVhtf9xeUuzJbLe3VGCl1iHMmEVKQ1W6sERv9u3AA=:0" alt="image-20250116123601846"></p></li>
+<li><p>由于本程序在我这里只是个人使用，所以需要将<code>设置</code>的<code>系统设置</code>按图修改。如果有商用需求请自行研究。
+<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116124313052.png?sign=Kx5oqb9LAlEjlCJst_vTIrneIMZdA7-2pUveyf_9u_M=:0"></p></li>
+</ol>
+<h3 id="添加渠道">添加渠道</h3>
+<h4 id="白嫖谷歌模型"><del>白嫖</del>谷歌模型</h4>
+<ol type="1">
+<li>访问<a href="https://aistudio.google.com/apikey">谷歌的aistudio官网</a>并登录谷歌账号进行申请</li>
+<li>点击创建<code>API密钥</code>记录所获得的值</li>
+</ol>
+<h4 id="回到你的new-api管理窗口">回到你的new-api管理窗口</h4>
+<ol type="1">
+<li><p>找到左侧的的<code>渠道</code>点击<code>添加渠道</code></p></li>
+<li><p><code>类型</code>选择<code>Google Gemini</code>，名称自己填写，在<code>密钥</code>处填写刚刚获得的<code>API的值</code></p>
+<p><img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250116130147974.png?sign=UXv-Lk7s9eD25AkXaFTUz1zrdJdUnXNYAImmuMMXx28=:0"></p>
+<p>模型还可以填写如下</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">gemini-1.5-pro</span><br><span class="line">gemini-1.5-flash</span><br><span class="line">gemini-1.5-flash-8b</span><br><span class="line">gemini-2.0-flash-exp</span><br><span class="line">gemini-exp-1206</span><br><span class="line">gemini-2.0-flash-thinking-exp-1219</span><br><span class="line">learnlm-1.5-pro-experimental</span><br><span class="line">gemma-2-2b-it</span><br><span class="line">gemma-2-9b-it</span><br><span class="line">gemma-2-27b-it</span><br></pre></td></tr></table></figure></li>
+<li><p>点击刚刚添加的渠道旁边的<code>测试</code>，如果出现<code>测试成功</code>以及消耗的时间的字样就配置成功了
+<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118113843955.png?sign=KsvJbpftnJRfQ2imqkHhNSw20EoxUeS06ATSHZXPgfY=:0" alt="image-20250118113824198"></p>
+<div class="note warning"><p>如果提示什么<code>in your area not supported</code>等字样可能就是你的vps不支持gemini的解锁需要你重新配置vps解锁，不过境外的一般都是解锁的</p>
+</div></li>
+<li><p>然后你可以依次添加其他模型，包括第三方的 <div class="note info"><p>如果添加第三方的请注意在代理的那一个位置填写代理的url</p>
+</div></p></li>
+</ol>
+<h3 id="创建个人令牌供自己使用">创建<code>个人令牌</code>供自己使用</h3>
+<p><div class="note info"><p>如果只有这么个令牌的话，用到后期可能会出现错误（就是余额不足的情况，但是渠道的余额是足够的）
+这是由于该程序设计出的初衷是为了商用的，默认一个 用户的额度是<span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.127ex;" xmlns="http://www.w3.org/2000/svg" width="4.525ex" height="1.824ex" role="img" focusable="false" viewBox="0 -750 2000 806"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="24" d="M162 187Q162 164 146 149T109 133H103V130Q108 115 115 105Q122 92 131 82T150 64T170 52T190 44T206 40T220 37L227 36V313Q190 320 162 335Q116 358 86 404T55 508Q55 567 85 614T165 685Q186 696 225 704H227V750H273V704L286 703Q369 690 413 631Q441 588 444 531Q444 514 443 509Q439 490 425 479T391 468Q368 468 353 483T337 522Q337 546 353 560T390 575L394 576V578Q386 599 372 614T342 637T314 649T288 656L273 658V408L288 405Q329 394 355 376Q396 348 420 300T444 199Q444 130 408 76T313 1Q286 -9 276 -9H273V-56H227V-10H221Q202 -6 193 -4T155 11T108 41T74 94T55 176V182Q55 227 95 238Q103 240 108 240Q129 240 145 226T162 187ZM225 657Q219 657 204 651T169 632T135 594T121 538Q121 512 131 491T156 457T187 435T213 423T227 420V539Q227 657 225 657ZM378 169Q378 230 339 265T274 301Q273 301 273 169V37Q324 50 351 87T378 169Z"></path></g><g data-mml-node="mn" transform="translate(500,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g></g></g></svg></mjx-container></span> 我们可以设置一下
+可以在<code>用户管理</code>的用户那个位置点击<code>编辑</code>，然后将额度调为自己的预算即可
+<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118115132332.png?sign=_em2sSJVmcyihw77WiPS18obBiJy1nQheL_Ou1ze1A4=:0" alt="image-20250118115132207"> 之后若是还不够，可以再次添加</p>
+</div></p>
+<h2 id="域名解析">域名解析</h2>
+<p>按照这个操作即可</p>
+<blockquote>
+<p><a href="/2025/01/14/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/" title="域名绑定">域名绑定</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>api</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图床</title>
+    <url>/2025/01/14/%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h1 id="前期准备">前期准备</h1>
+<blockquote>
+<ol type="1">
+<li>已经搭建好的Alist网盘 还未搭建参考：<a href="/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" title="Alist的安装与配置">Alist的安装与配置</a></li>
+<li><a href="https://github.com/Kuingsmile/PicList">PicList</a></li>
+</ol>
+</blockquote>
+<h1 id="步骤">步骤</h1>
+<ol type="1">
+<li>参考PicList关于Alist的配置文档即可 <img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118122623019.png?sign=T1OeILFYSYJsvacua70Cu-VZsEtLb6-0rMP497-nOcw=:0" alt="image-20250118122622893">
+<ol type="1">
+<li><code>图床配置名</code>随便填写</li>
+<li><code>设定URL</code>就是你的AList网盘地址</li>
+<li><code>设定用户名</code>和<code>设定密码</code>就是你登陆Alist网盘的登录信息</li>
+<li><code>设定上传路径</code>就是你希望你的图床挂载在哪里</li>
+</ol></li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+        <category>hexo博客搭建</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>图床</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Alist的安装与配置</title>
+    <url>/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="项目地址">项目地址</h1>
+<blockquote>
+<div class="note info"><blockquote>
+<p><a href="https://alist.nn.ci/zh/">Alist官网地址</a></p>
+</blockquote>
+</div>
+</blockquote>
+<h1 id="前期准备">前期准备</h1>
+<ol type="1">
+<li><a href="https://alist.nn.ci/zh/">Alist</a>支持的网盘（我的是<a
+href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive</a>）</li>
+<li>安装的1panel面板</li>
+<li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
+</ol>
+<h1 id="步骤">步骤</h1>
+<ol type="1">
+<li><p>访问1panel面板</p></li>
+<li><p>进入<code>应用商店</code>界面</p></li>
+<li><p>安装Alist</p></li>
+<li><p>进入终端输入以下指令更改密码 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></p></li>
+<li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p></li>
+<li><p>参考<a
+href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储</p></li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>网盘</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>无穷量阶</title>
     <url>/2025/01/15/%E6%97%A0%E7%A9%B7%E9%87%8F%E9%98%B6/</url>
     <content><![CDATA[<h1 id="无穷量阶分类">无穷量阶分类</h1>
@@ -327,6 +335,12 @@ href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储<
         <tag>数学</tag>
         <tag>无穷量阶</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>语法</title>
+    <url>/2025/01/15/%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[
+]]></content>
   </entry>
   <entry>
     <title>极限入门</title>
@@ -376,11 +390,5 @@ href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储<
         <tag>数学</tag>
         <tag>极限</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>语法</title>
-    <url>/2025/01/15/%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[
-]]></content>
   </entry>
 </search>
