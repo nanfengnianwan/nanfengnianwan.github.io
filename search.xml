@@ -66,6 +66,134 @@ href="https://github.com/kingToolbox/WindTerm">windterm</a>）</li>
       </tags>
   </entry>
   <entry>
+    <title>Alist的安装与配置</title>
+    <url>/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="项目地址">项目地址</h1>
+<blockquote>
+<div class="note info"><blockquote>
+<p><a href="https://alist.nn.ci/zh/">Alist官网地址</a></p>
+</blockquote>
+</div>
+</blockquote>
+<h1 id="前期准备">前期准备</h1>
+<ol type="1">
+<li><a href="https://alist.nn.ci/zh/">Alist</a>支持的网盘（我的是<a
+href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive</a>）</li>
+<li>安装的1panel面板</li>
+<li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
+</ol>
+<h1 id="步骤">步骤</h1>
+<ol type="1">
+<li><p>访问1panel面板</p></li>
+<li><p>进入<code>应用商店</code>界面</p></li>
+<li><p>安装Alist</p></li>
+<li><p>进入终端输入以下指令更改密码 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></p></li>
+<li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p></li>
+<li><p>参考<a
+href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储</p></li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>docker</tag>
+        <tag>网盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Gemini-Next-Chat安装与配置</title>
+    <url>/2025/01/20/Gemini-Next-Chat%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="项目地址">项目地址</h1>
+<blockquote>
+<div class="note info"><blockquote>
+<p><a href="https://github.com/u14app/gemini-next-chat">Gemini-Next-Chat项目地址</a></p>
+</blockquote>
+</div>
+</blockquote>
+<h1 id="前期准备">前期准备</h1>
+<ol type="1">
+<li>一个vps</li>
+<li>一个谷歌提供的<a href="https://aistudio.google.com/">api-key</a></li>
+</ol>
+<h1 id="步骤">步骤</h1>
+<h2 id="安装">安装</h2>
+<ol type="1">
+<li><p>连接终端，创建文件夹存储数据</p></li>
+<li><p>执行安装代码 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">docker pull xiangfa/talk-with-gemini:latest</span><br><span class="line">docker run -d --name talk-with-gemini \</span><br><span class="line">   -p 5481:3000 \</span><br><span class="line">   -e GEMINI<span class="emphasis">_API_</span>KEY=AIzaSy... \</span><br><span class="line">   -e ACCESS<span class="emphasis">_PASSWORD=your-password \</span></span><br><span class="line"><span class="emphasis">   -v /opt/1panel/apps/Gemini-Next-Chat/data:/data \</span></span><br><span class="line"><span class="emphasis">   xiangfa/talk-with-gemini</span></span><br></pre></td></tr></table></figure></p>
+<div class="note info"><p><strong>代码解释</strong>：</p>
+<ol type="1">
+<li><p><code>-p 5481:3000</code>:将容器端口3000映射到vps的5481端口</p></li>
+<li><p><code>-e GEMINI_API_KEY=AIzaSy...</code>:自己的谷歌api-key</p></li>
+<li><p><code>-e ACCESS_PASSWORD=your-password</code>:访问该前端的密码</p></li>
+<li><p><code>-v /opt/1panel/apps/Gemini-Next-Chat/data:/data</code>:将容器的数据目录挂载到<code>-v /opt/1panel/apps/Gemini-Next-Chat/data</code>这个路径下，确保更新时不会丢失数据。</p></li>
+<li><p>其他可选变量</p>
+<ol type="1">
+<li><code>GEMINI_API_BASE_URL</code>：覆盖 Gemini api 请求基本
+url。为了避免服务端代理 url 泄漏，不会覆盖前端页面中的链接。</li>
+<li><code>NEXT_PUBLIC_GEMINI_MODEL_LIST</code>:自定义模型列表，默认为:
+all。</li>
+<li><code>HEAD_SCRIPTS</code>:用于注入的脚本代码可用于统计或错误跟踪。</li>
+</ol></li>
+</ol>
+</div></li>
+</ol>
+<h2 id="配置">配置</h2>
+<ol type="1">
+<li>根据需要更改环境变量即可</li>
+<li>域名绑定</li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>UI</tag>
+        <tag>dockers</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Gemini-Search的安装与配置</title>
+    <url>/2025/01/18/Gemini-Search%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="项目地址">项目地址</h1>
+<blockquote>
+<div class="note info"><blockquote>
+<p><a href="https://linux.do/t/topic/369581">Gemini-Search帖子地址</a>
+感谢大佬<code>AsukaRelic</code></p>
+<figure>
+<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118202856481.png?sign=vbd7Jc0CQvGFq68k4e5cFX5OBDre67ZVhEDMi5iQ-SA=:0" alt="image-20250118202856419">
+<figcaption aria-hidden="true">image-20250118202856419</figcaption>
+</figure>
+</blockquote>
+</div>
+</blockquote>
+<h1 id="前期准备">前期准备</h1>
+<ol type="1">
+<li>一个vps</li>
+<li>一个谷歌提供的<a href="https://aistudio.google.com/">api-key</a></li>
+</ol>
+<h1 id="步骤">步骤</h1>
+<h2 id="安装">安装</h2>
+<ol type="1">
+<li><p>连接ssh终端</p></li>
+<li><p>创建一个文件夹存放该项目</p></li>
+<li><p>进入该文件夹</p></li>
+<li><p>执行代码 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># Pull the image</span></span><br><span class="line">docker pull ghcr.io/curtaintears/gemini-search:latest</span><br><span class="line"></span><br><span class="line"><span class="section"># Run with default port (7788)</span></span><br><span class="line">docker run -d \</span><br><span class="line">  -p 7788:7788 \</span><br><span class="line">  -e GOOGLE<span class="emphasis">_API_</span>KEY=your<span class="emphasis">_api_</span>key<span class="emphasis">_here \</span></span><br><span class="line"><span class="emphasis">  --name gemini-search \</span></span><br><span class="line"><span class="emphasis">  ghcr.io/curtaintears/gemini-search:latest</span></span><br><span class="line"><span class="emphasis"></span></span><br></pre></td></tr></table></figure></p>
+<p>记得将api的值设定成为自己的。</p></li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>dockers</tag>
+        <tag>搜索</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>new-api的安装与配置</title>
     <url>/2025/01/16/new-api%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<h1 id="项目地址">项目地址</h1>
@@ -166,37 +294,6 @@ href="https://github.com/kingToolbox/WindTerm">windterm</a>）</li>
       </tags>
   </entry>
   <entry>
-    <title>图床</title>
-    <url>/2025/01/14/%E5%9B%BE%E5%BA%8A/</url>
-    <content><![CDATA[<h1 id="前期准备">前期准备</h1>
-<blockquote>
-<ol type="1">
-<li>已经搭建好的Alist网盘 还未搭建参考：<a href="/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" title="Alist的安装与配置">Alist的安装与配置</a></li>
-<li><a href="https://github.com/Kuingsmile/PicList">PicList</a></li>
-</ol>
-</blockquote>
-<h1 id="步骤">步骤</h1>
-<ol type="1">
-<li>参考PicList关于Alist的配置文档即可 <img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118122623019.png?sign=T1OeILFYSYJsvacua70Cu-VZsEtLb6-0rMP497-nOcw=:0" alt="image-20250118122622893">
-<ol type="1">
-<li><code>图床配置名</code>随便填写</li>
-<li><code>设定URL</code>就是你的AList网盘地址</li>
-<li><code>设定用户名</code>和<code>设定密码</code>就是你登陆Alist网盘的登录信息</li>
-<li><code>设定上传路径</code>就是你希望你的图床挂载在哪里</li>
-</ol></li>
-</ol>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
-        <category>hexo博客搭建</category>
-      </categories>
-      <tags>
-        <tag>vps</tag>
-        <tag>图床</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>域名绑定</title>
     <url>/2025/01/14/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/</url>
     <content><![CDATA[<h1 id="前期准备">前期准备</h1>
@@ -235,97 +332,6 @@ href="https://github.com/kingToolbox/WindTerm">windterm</a>）</li>
         <tag>vps</tag>
         <tag>docker</tag>
         <tag>建站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Gemini-Search的安装与配置</title>
-    <url>/2025/01/18/Gemini-Search%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="项目地址">项目地址</h1>
-<blockquote>
-<div class="note info"><blockquote>
-<p><a href="https://linux.do/t/topic/369581">Gemini-Search帖子地址</a>
-感谢大佬<code>AsukaRelic</code></p>
-<figure>
-<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118202856481.png?sign=vbd7Jc0CQvGFq68k4e5cFX5OBDre67ZVhEDMi5iQ-SA=:0" alt="image-20250118202856419">
-<figcaption aria-hidden="true">image-20250118202856419</figcaption>
-</figure>
-</blockquote>
-</div>
-</blockquote>
-<h1 id="前期准备">前期准备</h1>
-<ol type="1">
-<li>一个vps</li>
-<li>一个谷歌提供的<a href="https://aistudio.google.com/">api-key</a></li>
-</ol>
-<h1 id="步骤">步骤</h1>
-<h2 id="安装">安装</h2>
-<ol type="1">
-<li><p>连接ssh终端</p></li>
-<li><p>创建一个文件夹存放该项目</p></li>
-<li><p>进入该文件夹</p></li>
-<li><p>执行代码 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># Pull the image</span></span><br><span class="line">docker pull ghcr.io/curtaintears/gemini-search:latest</span><br><span class="line"></span><br><span class="line"><span class="section"># Run with default port (7788)</span></span><br><span class="line">docker run -d \</span><br><span class="line">  -p 7788:7788 \</span><br><span class="line">  -e GOOGLE<span class="emphasis">_API_</span>KEY=your<span class="emphasis">_api_</span>key<span class="emphasis">_here \</span></span><br><span class="line"><span class="emphasis">  --name gemini-search \</span></span><br><span class="line"><span class="emphasis">  ghcr.io/curtaintears/gemini-search:latest</span></span><br><span class="line"><span class="emphasis"></span></span><br></pre></td></tr></table></figure></p>
-<p>记得将api的值设定成为自己的。</p></li>
-</ol>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
-      </categories>
-      <tags>
-        <tag>vps</tag>
-        <tag>搜索</tag>
-        <tag>dockers</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Gemini-Next-Chat安装与配置</title>
-    <url>/2025/01/20/Gemini-Next-Chat%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="项目地址">项目地址</h1>
-<blockquote>
-<div class="note info"><blockquote>
-<p><a href="https://github.com/u14app/gemini-next-chat">Gemini-Next-Chat项目地址</a></p>
-</blockquote>
-</div>
-</blockquote>
-<h1 id="前期准备">前期准备</h1>
-<ol type="1">
-<li>一个vps</li>
-<li>一个谷歌提供的<a href="https://aistudio.google.com/">api-key</a></li>
-</ol>
-<h1 id="步骤">步骤</h1>
-<h2 id="安装">安装</h2>
-<ol type="1">
-<li><p>连接终端，创建文件夹存储数据</p></li>
-<li><p>执行安装代码 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">docker pull xiangfa/talk-with-gemini:latest</span><br><span class="line">docker run -d --name talk-with-gemini \</span><br><span class="line">   -p 5481:3000 \</span><br><span class="line">   -e GEMINI<span class="emphasis">_API_</span>KEY=AIzaSy... \</span><br><span class="line">   -e ACCESS<span class="emphasis">_PASSWORD=your-password \</span></span><br><span class="line"><span class="emphasis">   -v /opt/1panel/apps/Gemini-Next-Chat/data:/data \</span></span><br><span class="line"><span class="emphasis">   xiangfa/talk-with-gemini</span></span><br></pre></td></tr></table></figure></p>
-<div class="note info"><p><strong>代码解释</strong>：</p>
-<ol type="1">
-<li><p><code>-p 5481:3000</code>:将容器端口3000映射到vps的5481端口</p></li>
-<li><p><code>-e GEMINI_API_KEY=AIzaSy...</code>:自己的谷歌api-key</p></li>
-<li><p><code>-e ACCESS_PASSWORD=your-password</code>:访问该前端的密码</p></li>
-<li><p><code>-v /opt/1panel/apps/Gemini-Next-Chat/data:/data</code>:将容器的数据目录挂载到<code>-v /opt/1panel/apps/Gemini-Next-Chat/data</code>这个路径下，确保更新时不会丢失数据。</p></li>
-<li><p>其他可选变量</p>
-<ol type="1">
-<li><code>GEMINI_API_BASE_URL</code>：覆盖 Gemini api 请求基本
-url。为了避免服务端代理 url 泄漏，不会覆盖前端页面中的链接。</li>
-<li><code>NEXT_PUBLIC_GEMINI_MODEL_LIST</code>:自定义模型列表，默认为:
-all。</li>
-<li><code>HEAD_SCRIPTS</code>:用于注入的脚本代码可用于统计或错误跟踪。</li>
-</ol></li>
-</ol>
-</div></li>
-</ol>
-<h2 id="配置">配置</h2>
-<ol type="1">
-<li>根据需要更改环境变量即可</li>
-<li>域名绑定</li>
-</ol>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
-      </categories>
-      <tags>
-        <tag>vps</tag>
-        <tag>dockers</tag>
-        <tag>UI</tag>
       </tags>
   </entry>
   <entry>
@@ -375,6 +381,37 @@ all。</li>
       </tags>
   </entry>
   <entry>
+    <title>图床</title>
+    <url>/2025/01/14/%E5%9B%BE%E5%BA%8A/</url>
+    <content><![CDATA[<h1 id="前期准备">前期准备</h1>
+<blockquote>
+<ol type="1">
+<li>已经搭建好的Alist网盘 还未搭建参考：<a href="/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" title="Alist的安装与配置">Alist的安装与配置</a></li>
+<li><a href="https://github.com/Kuingsmile/PicList">PicList</a></li>
+</ol>
+</blockquote>
+<h1 id="步骤">步骤</h1>
+<ol type="1">
+<li>参考PicList关于Alist的配置文档即可 <img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250118122623019.png?sign=T1OeILFYSYJsvacua70Cu-VZsEtLb6-0rMP497-nOcw=:0" alt="image-20250118122622893">
+<ol type="1">
+<li><code>图床配置名</code>随便填写</li>
+<li><code>设定URL</code>就是你的AList网盘地址</li>
+<li><code>设定用户名</code>和<code>设定密码</code>就是你登陆Alist网盘的登录信息</li>
+<li><code>设定上传路径</code>就是你希望你的图床挂载在哪里</li>
+</ol></li>
+</ol>
+]]></content>
+      <categories>
+        <category>个人vps配置之路</category>
+        <category>hexo博客搭建</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+        <tag>图床</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>无穷量阶</title>
     <url>/2025/01/15/%E6%97%A0%E7%A9%B7%E9%87%8F%E9%98%B6/</url>
     <content><![CDATA[<h1 id="无穷量阶分类">无穷量阶分类</h1>
@@ -388,49 +425,6 @@ all。</li>
       <tags>
         <tag>数学</tag>
         <tag>无穷量阶</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>语法</title>
-    <url>/2025/01/15/%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
-    <title>Alist的安装与配置</title>
-    <url>/2025/01/14/Alist%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="项目地址">项目地址</h1>
-<blockquote>
-<div class="note info"><blockquote>
-<p><a href="https://alist.nn.ci/zh/">Alist官网地址</a></p>
-</blockquote>
-</div>
-</blockquote>
-<h1 id="前期准备">前期准备</h1>
-<ol type="1">
-<li><a href="https://alist.nn.ci/zh/">Alist</a>支持的网盘（我的是<a
-href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage">onedrive</a>）</li>
-<li>安装的1panel面板</li>
-<li>解析好的域名（我的是<code>三念.us.kg</code>)</li>
-</ol>
-<h1 id="步骤">步骤</h1>
-<ol type="1">
-<li><p>访问1panel面板</p></li>
-<li><p>进入<code>应用商店</code>界面</p></li>
-<li><p>安装Alist</p></li>
-<li><p>进入终端输入以下指令更改密码 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">./alist admin set 你的密码</span><br></pre></td></tr></table></figure></p></li>
-<li><p>然后访问你的alist地址，输入登录信息，用户名是<code>admin</code></p></li>
-<li><p>参考<a
-href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储</p></li>
-</ol>
-]]></content>
-      <categories>
-        <category>个人vps配置之路</category>
-      </categories>
-      <tags>
-        <tag>vps</tag>
-        <tag>docker</tag>
-        <tag>网盘</tag>
       </tags>
   </entry>
   <entry>
@@ -481,5 +475,11 @@ href="https://alist.nn.ci/zh/guide/">Alist的官方文档</a>进行配置存储<
         <tag>数学</tag>
         <tag>极限</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>语法</title>
+    <url>/2025/01/15/%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[
+]]></content>
   </entry>
 </search>
