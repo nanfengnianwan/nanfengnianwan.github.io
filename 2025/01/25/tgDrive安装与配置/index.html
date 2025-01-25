@@ -22,29 +22,36 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"flat"},"fold":{"enable":true,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="vps第八个程序：cloudreve，网盘聚合">
+    <meta name="description" content="vps的第十个程序：tgDrive，基于telegram的存储系统">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cloudreve安装与配置">
-<meta property="og:url" content="http://example.com/2025/01/21/cloudreve%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:title" content="tgDrive安装与配置">
+<meta property="og:url" content="http://example.com/2025/01/25/tgDrive%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="vps第八个程序：cloudreve，网盘聚合">
+<meta property="og:description" content="vps的第十个程序：tgDrive，基于telegram的存储系统">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-01-21T12:18:02.000Z">
-<meta property="article:modified_time" content="2025-01-21T14:54:31.987Z">
+<meta property="og:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125171225150.png?sign=0Mp2X2D3pKI7bMUZkYR9-xRMItNodny-oYeoOPgPOMw=:0">
+<meta property="og:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125171639323.png?sign=ILLoaSYb9ehEU2ENnfnmoNyM-pFDg8rWqaM--NUt2hc=:0">
+<meta property="og:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125172108861.png?sign=-kSnhfZH9MJxFY4pNvuadPIArdcvvGbTa_6ne9BUrkc=:0">
+<meta property="og:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125172823948.png?sign=So1Bgtuzdjw9sva0jubtIm_sDdnpWAmOCar3GFnpxr0=:0">
+<meta property="og:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125172859146.png?sign=HIOPKL98Hg8qc4tct-WbHNk0rsNYncgFk3J7q6z7JIE=:0">
+<meta property="og:image" content="c:\Users\munia\AppData\Roaming\Typora\typora-user-images\image-20250125173142057.png">
+<meta property="article:published_time" content="2025-01-25T08:58:20.000Z">
+<meta property="article:modified_time" content="2025-01-25T09:31:51.486Z">
 <meta property="article:author" content="三念">
 <meta property="article:tag" content="vps">
 <meta property="article:tag" content="docker">
 <meta property="article:tag" content="网盘">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125171225150.png?sign=0Mp2X2D3pKI7bMUZkYR9-xRMItNodny-oYeoOPgPOMw=:0">
 
 
-<link rel="canonical" href="http://example.com/2025/01/21/cloudreve%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">
+<link rel="canonical" href="http://example.com/2025/01/25/tgDrive%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/01/21/cloudreve%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/","path":"2025/01/21/cloudreve安装与配置/","title":"cloudreve安装与配置"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2025/01/25/tgDrive%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/","path":"2025/01/25/tgDrive安装与配置/","title":"tgDrive安装与配置"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>cloudreve安装与配置 | Hexo</title>
+<title>tgDrive安装与配置 | Hexo</title>
   
 
 
@@ -256,7 +263,7 @@ mjx-container[display="true"] + br {
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80"><span class="nav-number">1.</span> <span class="nav-text">项目地址</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="nav-number">2.</span> <span class="nav-text">前期准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">3.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80"><span class="nav-number">1.</span> <span class="nav-text">项目地址</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="nav-number">2.</span> <span class="nav-text">前期准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">3.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-number">3.2.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96bot-token%E5%92%8Cchatid"><span class="nav-number">3.2.1.</span> <span class="nav-text">获取bot token和chatID</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BF%E9%97%AE%E8%AF%A5%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E7%9A%84%E5%9C%B0%E5%9D%80"><span class="nav-number">3.2.2.</span> <span class="nav-text">访问该项目部署的地址</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -332,7 +339,7 @@ mjx-container[display="true"] + br {
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/21/cloudreve%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/01/25/tgDrive%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/20250112193229582.jpg?sign=CLUtHAZ6oyHqPReGUGILg5jqEJO-p8PzqNuiA5Yc0mQ=:0">
@@ -345,12 +352,12 @@ mjx-container[display="true"] + br {
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="cloudreve安装与配置 | Hexo">
+      <meta itemprop="name" content="tgDrive安装与配置 | Hexo">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          cloudreve安装与配置
+          tgDrive安装与配置
         </h1>
 
         <div class="post-meta-container">
@@ -362,7 +369,7 @@ mjx-container[display="true"] + br {
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2025-01-21 20:18:02 / 修改时间：22:54:31" itemprop="dateCreated datePublished" datetime="2025-01-21T20:18:02+08:00">2025-01-21</time>
+      <time title="创建时间：2025-01-25 16:58:20 / 修改时间：17:31:51" itemprop="dateCreated datePublished" datetime="2025-01-25T16:58:20+08:00">2025-01-25</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -386,20 +393,45 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody"><h1 id="项目地址">项目地址</h1>
 <blockquote>
 <div class="note info"><blockquote>
-<p><a target="_blank" rel="noopener" href="https://cloudreve.org/">项目地址</a></p>
+<p><a target="_blank" rel="noopener" href="https://linux.do/t/topic/387543">tgdrive项目地址</a></p>
 </blockquote>
 </div>
 </blockquote>
 <h1 id="前期准备">前期准备</h1>
 <ol type="1">
 <li>一台vps</li>
+<li>一个tg号</li>
 </ol>
 <h1 id="步骤">步骤</h1>
 <h2 id="安装">安装</h2>
 <ol type="1">
-<li>创建一个文件夹用于存放，进入该文件夹</li>
-<li>按照官网说明执行代码即可，记得将其中的参数改为实际的路径</li>
-<li>初始密码在日志中</li>
+<li>创建<code>docker-compose.yml</code>文件</li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">services:</span><br><span class="line">  tgdrive:</span><br><span class="line"><span class="code">    image: nanyangzesi/tgdrive:latest</span></span><br><span class="line"><span class="code">    container_name: tgdrive</span></span><br><span class="line"><span class="code">    ports:</span></span><br><span class="line"><span class="code">      - "8085:8085"</span></span><br><span class="line"><span class="code">    volumes:</span></span><br><span class="line"><span class="code">      - ./db:/app/db</span></span><br><span class="line"><span class="code">    restart: always</span></span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>启动服务</li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+<h2 id="配置">配置</h2>
+<h3 id="获取bot-token和chatid">获取<code>bot token</code>和<code>chatID</code></h3>
+<div class="tabs" id="获取`bot-token`和`chatid`"><ul class="nav-tabs"><li class="tab active"><a href="#获取`bot-token`和`chatid`-1">bot token</a></li><li class="tab"><a href="#获取`bot-token`和`chatid`-2">chatID</a></li></ul><div class="tab-content"><div class="tab-pane active" id="获取`bot-token`和`chatid`-1"><ol type="1">
+<li><p>登录tg找到<code>@BotFather</code></p></li>
+<li><p>创建Bot</p>
+<ol type="1">
+<li>输入命令<code>/newbot</code> <img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125171225150.png?sign=0Mp2X2D3pKI7bMUZkYR9-xRMItNodny-oYeoOPgPOMw=:0" alt="image-20250125171225054"></li>
+<li>设置一个bot名称和用户名，我设置为<code>tgdrive_bot</code>以及<code>mntgdive_bot</code>，红色遮住的就是<code>bot token</code>
+<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125171639323.png?sign=ILLoaSYb9ehEU2ENnfnmoNyM-pFDg8rWqaM--NUt2hc=:0" alt="image-20250125171639259"></li>
+</ol></li>
+</ol></div><div class="tab-pane" id="获取`bot-token`和`chatid`-2"><ol type="1">
+<li>找到<code>@getmyid_bot</code>输入<code>/start</code>,被红色遮住的jiu'sh就是<code>chatID</code>
+<img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125172108861.png?sign=-kSnhfZH9MJxFY4pNvuadPIArdcvvGbTa_6ne9BUrkc=:0" alt="image-20250125172108792"></li>
+</ol></div></div></div>
+<h3 id="访问该项目部署的地址">访问该项目部署的地址</h3>
+<ol type="1">
+<li><p>点击<code>管理界面</code> <img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125172823948.png?sign=So1Bgtuzdjw9sva0jubtIm_sDdnpWAmOCar3GFnpxr0=:0" alt="image-20250125172823799"></p></li>
+<li><p>将之前获得的值填入 <img src="https://pan.munian390.us.kg/d/%E4%B8%89%E5%BF%B5%E7%9A%84%E5%8D%9A%E5%AE%A2/%E5%9B%BE%E7%89%87/20250125172859146.png?sign=HIOPKL98Hg8qc4tct-WbHNk0rsNYncgFk3J7q6z7JIE=:0" alt="image-20250125172859041"></p></li>
+<li><p>登录信息初始为<code>admin</code>和<code>123456</code></p></li>
+<li><p>然后加载配置 <img src="C:\Users\munia\AppData\Roaming\Typora\typora-user-images\image-20250125173142057.png" alt="image-20250125173142057"></p></li>
 </ol>
 
     </div>
@@ -419,14 +451,11 @@ mjx-container[display="true"] + br {
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2025/01/21/SearchWithAI%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" rel="prev" title="SearchWithAI的安装与配置">
-                  <i class="fa fa-angle-left"></i> SearchWithAI的安装与配置
+                <a href="/2025/01/21/Docker-Microsoft365-E5-Renew-X%E5%AE%89%E8%A3%85/" rel="prev" title="Docker_Microsoft365_E5_Renew_X安装">
+                  <i class="fa fa-angle-left"></i> Docker_Microsoft365_E5_Renew_X安装
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2025/01/21/Docker-Microsoft365-E5-Renew-X%E5%AE%89%E8%A3%85/" rel="next" title="Docker_Microsoft365_E5_Renew_X安装">
-                  Docker_Microsoft365_E5_Renew_X安装 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -504,7 +533,7 @@ mjx-container[display="true"] + br {
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"http://example.com/2025/01/21/cloudreve%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"http://example.com/2025/01/25/tgDrive%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 
 </body>
